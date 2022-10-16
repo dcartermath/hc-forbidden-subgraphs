@@ -1,1 +1,4 @@
-# hc-forbidden-subgraphs
+# Hadwiger's Conjecture with Certain Forbidden Induced Subgraphs
+This repository hosts code for the paper "Hadwiger's Conjecture with Certain Forbidden Induced Subgraphs." The files hp_figure, i_figure, and edges_figure contain the TeX/TikZ source of Figures 3, 4, and 5, respectively. These are read by verify.py, which implements the various algorithms described in the paper in order to prove the main theorem, Theorem 2, according to the outline in Figure 5. Each line of output is of the from *graph1* *graph2* *count* *weight*, respectively denoting the starting graph, ending graph, total count of intermediate graphs, and the so-called total weight of the intermediate graphs.
+
+Running verify.py requires [Python](https://www.python.org/) version 3.9.6, [igraph-python](https://igraph.org/python) version 0.9.11, and [PySAT](https://pysathq.github.io/) version 0.1.7.dev19, though it probably works fine with newer versions as well. The code may take several minutes or hours to run, depending on how powerful your computer is.
